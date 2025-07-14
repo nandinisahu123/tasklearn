@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>tasklearn - Online Learning</title>
+  <link rel="stylesheet" href="task2.css">
+</head>
+<body>
+  <div class="login-container" id="loginContainer">
+    <div class="login-box">
+      <h1>Welcome to Tasklearn</h1>
+      <p>Please enter your name to continue.</p>
+      <input type="text" id="username" placeholder="Your Name" />
+      <button onclick="login()">Start Learning</button>
+    </div>
+  </div>
+  <div class="app-container" id="appContainer" style="display: none;">
+    <header>
+      <h1>Hi, <span id="userName"></span> 👋</h1>
+      <button onclick="logout()">Logout</button>
+    </header>
+    <section class="video-section">
+      <h2>🎥 Introduction to Web Development</h2>
+      <div class="video-wrapper">
+        <iframe width="100%" height="400" src="https://www.youtube.com/embed/cZHp-Oozg6I?si=U1vbUFAMkOSdZ3UF"
+                title="YouTube video" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+      </div>
+    </section>
+    <section class="quiz-section">
+      <h2>🧠 Quick Quiz</h2>
+      <div id="quizContainer">
+        <p id="questionText">Loading question...</p>
+        <div id="optionsContainer"></div>
+      </div>
+    </section>
+    <section class="progress-section">
+      <h2>📊 Your Progress</h2>
+      <div class="progress-bar">
+        <div class="progress" id="progressBar"></div>
+      </div>
+      <p id="progressText">Progress: 0%</p>
+    </section>
+  </div>
+  <script src="task2.js"></script>
+</body>
+</html>

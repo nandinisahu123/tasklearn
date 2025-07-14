@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to right, #cdd4e0, #820ab9);
+}
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.login-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: linear-gradient(to right, #020527, #f2f5f8);
+  padding: 20px;
+}
+
+.login-box {
+  background: linear-gradient(#1e1c9e, #d3cbc6);
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 100%;
+  max-width: 400px;
+}
+
+.login-box h1 {
+  margin-bottom: 10px;
+  color: #01070e;
+}
+
+.login-box p {
+  color: #333;
+  font-weight: 500;
+}
+
+.login-box input {
+  padding: 12px;
+  width: 90%;
+  margin: 15px 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.login-box input:focus {
+  outline: none;
+  border-color: #555;
+  box-shadow: 0 0 5px rgba(0,0,0,0.2);
+}
+
+.login-box button {
+  padding: 12px 25px;
+  background: linear-gradient(to right, #bece2c, #333328);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+
+.login-box button:hover {
+  background: linear-gradient(to right, #e0ec3c, #5a5a3a);
+}
+.app-container {
+  padding: 30px;
+}
+
+header {
+  background: linear-gradient(to right, #0056b3, #050504);
+  color: white;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.video-section,
+.quiz-section,
+.progress-section {
+  background: #f9f9f9;
+  margin: 25px auto;
+  padding: 20px;
+  width: 85%;
+  max-width: 700px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+video {
+  width: 100%;
+  border-radius: 8px;
+  outline: none;
+}
+.quiz-section button {
+  margin: 8px 5px;
+  padding: 10px 18px;
+  background-color: #0056b3;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.quiz-section button:hover {
+  background-color: #003c80;
+}
+.progress-bar {
+  height: 20px;
+  background: linear-gradient(to right, #e7e3e9, #090b92);
+  border-radius: 20px;
+  overflow: hidden;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.progress {
+  height: 100%;
+  background-color: #28a745;
+  width: 0%;
+  transition: width 0.5s ease-in-out;
+}
+
+#progressText {
+  margin-top: 8px;
+  font-weight: 600;
+}
